@@ -31,7 +31,7 @@ public class UserDAO {
         try (Connection con = DBConnection.getConnection();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
-            ps.setString(1, email.trim());     // Trim to avoid trailing spaces
+            ps.setString(1, email.trim());     
             ps.setString(2, password.trim());
 
             try (ResultSet rs = ps.executeQuery()) {
