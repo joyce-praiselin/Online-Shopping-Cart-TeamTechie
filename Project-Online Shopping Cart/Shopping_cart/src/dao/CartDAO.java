@@ -20,6 +20,6 @@ public class CartDAO {
         }
     }
 
-    // Other methods like getCartByUserId, saveCartItem could be added if using persistent cart
+   
 }
 
