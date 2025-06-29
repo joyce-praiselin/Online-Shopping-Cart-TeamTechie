@@ -6,7 +6,7 @@ import util.DBConnection;
 
 public class UserDAO {
 
-    // Register a new user
+    
     public boolean registerUser(User user) {
         String sql = "INSERT INTO users (name, email, password, is_admin) VALUES (?, ?, ?, ?)";
         try (Connection con = DBConnection.getConnection();
